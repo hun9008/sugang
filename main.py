@@ -214,5 +214,5 @@ async def captchaImg():
     img_path = random.sample(img_list, 1)
     profile.state.security_number = os.path.basename(img_path[0])[0:4]
     with open(img_path[0], "rb") as img:
-        img_bytes = img.read().__bytes__()
+        img_bytes = img.read()
     return Response(content=img_bytes, media_type="image/png")
