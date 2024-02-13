@@ -16,7 +16,7 @@ class State:
     def __init__(self):
         self.security_number = ""
         self.db = pd.read_excel(
-            "static/db/db.xlsx",
+            "static/db/db_2024.xlsx",
             engine="openpyxl",
             header=1,
             usecols="B, C, F, G, H, M",
@@ -38,10 +38,10 @@ class Profile:
         ).replace(second=0)
 
         self.name = "홍길동"
-        self.std_number = "202300000"
-        self.std_dept = "미디어학과"
-        self.grade = "1"
-        self.max_credits = "21"
+        self.std_number = "202020000"
+        self.std_dept = "소프트웨어학과"
+        self.grade = "3"
+        self.max_credits = "24"
 
         self.state = state
 
