@@ -12,7 +12,7 @@ import re
 import time
 from fastapi.middleware.cors import CORSMiddleware
 
-
+# db_2024_1 업데이트. 잘 썻습니다.
 class State:
     def __init__(self):
         self.security_number = ""
